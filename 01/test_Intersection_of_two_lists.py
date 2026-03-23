@@ -1,10 +1,11 @@
 from Intersection_of_two_lists import find_intersection_of_two_lists, Node
 
+
 def test_find_intersection_of_two_lists():
     intersection_node = Node(8)
     intersection_node.next = Node(4)
     intersection_node.next.next = Node(5)
-    
+
     list_A = Node(4)
     list_A.next = Node(1)
     list_A.next.next = intersection_node
@@ -16,4 +17,5 @@ def test_find_intersection_of_two_lists():
 
     assert find_intersection_of_two_lists(list_A, list_B) is intersection_node
 
-test_find_intersection_of_two_lists() 
+
+test_find_intersection_of_two_lists()
