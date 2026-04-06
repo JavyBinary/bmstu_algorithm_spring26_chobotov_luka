@@ -8,3 +8,9 @@ def test_find_K_smallest_element_in_matrix() -> None:
     assert find_K_smallest_element_in_matrix(matrix, 12) == 12
     assert find_K_smallest_element_in_matrix(matrix, 16) == 16
     assert find_K_smallest_element_in_matrix([[-5]], 1) == -5
+
+    matrix = [[1, 10, 22, 34], [3, 13, 25, 37], [5, 16, 28, 40], [7, 19, 31, 43]]
+    assert find_K_smallest_element_in_matrix(matrix, 5) == 10
+    assert find_K_smallest_element_in_matrix(matrix, 16) == 43
+    assert find_K_smallest_element_in_matrix([[]], 5) == -1
+    assert find_K_smallest_element_in_matrix([], 5) == -1
